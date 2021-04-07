@@ -24,8 +24,6 @@ TEST_CASE("Check Empty bulletin board")
 }
 TEST_CASE("Check my board")
 {
-
-
     /*
     My Board:
     __________________________________________________________
