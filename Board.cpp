@@ -28,7 +28,6 @@ namespace ariel {
      
 
     string Board::read(unsigned int row, unsigned int column, Direction direction,unsigned int length) {
-
            string result;
            char output=0;
                             if(direction==Direction::Horizontal){
@@ -47,16 +46,18 @@ namespace ariel {
                  }
                             }
 
-               if(direction==Direction::Vertical){
-                              for (unsigned int i = 0; i < length; i++) {  
+          if(direction==Direction::Vertical){
+          for (unsigned int i = 0; i < length; i++) {  
 
-                        if(MyBoard[row][column]==0){
+                if(MyBoard[row][column]==0){
                    result+= '_';
                    row++;
                 }
+                else{
                      output=MyBoard[row][column];
                      result+=output;
-                                        row++;
+                     row++;
+                }
 
                  }
                }
